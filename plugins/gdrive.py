@@ -36,8 +36,7 @@ from . import asst, eod, eor, get_string, ultroid_cmd
 
 
 @ultroid_cmd(
-    pattern="gdown( (.*)|$)",
-    fullsudo=True,
+    pattern="gdown( (.*)|$)"
 )
 async def gdown(event):
     GDrive = GDriveManager()
@@ -56,8 +55,7 @@ async def gdown(event):
 
 
 @ultroid_cmd(
-    pattern="gdlist$",
-    fullsudo=True,
+    pattern="gdlist( (.*)|$)"
 )
 async def files(event):
     GDrive = GDriveManager()
@@ -95,8 +93,7 @@ async def files(event):
 
 
 @ultroid_cmd(
-    pattern="gdul( (.*)|$)",
-    fullsudo=True,
+    pattern="gdul( (.*)|$)"
 )
 async def _(event):
     GDrive = GDriveManager()
@@ -172,8 +169,7 @@ async def _(event):
 
 
 @ultroid_cmd(
-    pattern="gdsearch( (.*)|$)",
-    fullsudo=True,
+    pattern="gdsearch( (.*)|$)"
 )
 async def _(event):
     GDrive = GDriveManager()
@@ -216,8 +212,7 @@ async def _(event):
 
 
 @ultroid_cmd(
-    pattern="gdfolder$",
-    fullsudo=True,
+    pattern="gdfolder( (.*)|$)"
 )
 async def _(event):
     GDrive = GDriveManager()
